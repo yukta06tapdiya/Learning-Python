@@ -1,0 +1,51 @@
+details=[3,5,6,"School",True]
+print(type(details))
+print(details[-3])
+print(details[len(details)-3])
+print(details[5-3])
+print(details[2])
+
+#checking whether an item is present in given list
+if 7 in details:
+    print("Yes")
+else:
+    print("No")
+
+
+animals=["cat","dog","horse","mouse","Goat","sheep","cow","pig"]
+print(animals)
+print(animals[2:6])
+print(animals[1:8:2])
+
+#list comprehension
+list=[i for i in range(45)]
+print(list)
+list=[i * i for i in range(45)]
+print(list)
+
+names=["Bruno","Max","Joseph","Ken","Rosa"]
+namesWith_0=[item for item in names if 'o' in item]
+print(namesWith_0)
+
+
+
+#list methods
+l=[11,45,1,2,6,9,4]
+print(l)
+l.append(22)
+print(l)
+l.sort(reverse=True)
+print(l.reverse())
+
+print(l.count(1)) 
+print(l.index(6))
+print(l)
+m=l.copy()
+m[0]=0
+print(m)
+l.insert(3,899)
+print(l)
+
+m=[900,500,300]
+l.extend(m)
+print(l)
